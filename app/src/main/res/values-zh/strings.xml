@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi切换器</string>
+    <string name="main_activity_name">WiFi扫描结果</string>
+    <string name="menu_switch">开关服务</string>
+    <string name="setting">设置</string>
+    <string name="available">可切换</string>
+    <string name="toast_permission_denied">只有授予位置权限才能正常工作。</string>
+    <string name="min_signal_difference">最低信号差异</string>
+    <string name="min_signal_strength">切换阈值</string>
+    <string name="scan_interval">扫描间隔</string>
+    <string name="auto_switch">自动切换</string>
+</resources>

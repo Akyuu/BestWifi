@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BestWifi</string>
+    <string name="main_activity_name">Wifi Scan</string>
+    <string name="menu_switch">switch</string>
+    <string name="setting">setting</string>
+    <string name="available">Available</string>
+    <string name="toast_permission_denied">App Cannot work without Location permission.</string>
+    <string name="min_signal_strength">Minimal Strength</string>
+    <string name="min_signal_difference">Minimal Difference</string>
+    <string name="scan_interval">Scan Interval(second)</string>
+    <string name="auto_switch">Auto Switch</string>
+</resources>
