@@ -44,9 +44,6 @@ public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private WifiAdapter mAdapter;
 
-    // Toolbar View
-    private Switch mSwitch;
-
     private WifiService.WifiBinder mBinder;
 
     @Override
@@ -93,12 +90,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar, menu);
-        mSwitch = new Switch(this);
-        mSwitch.setText(getString(R.string.auto_switch));
-        mSwitch.setTextColor(0);
-        menu.findItem(R.id.menu_switch).setActionView(mSwitch);
-        mSwitch.setChecked(mBinder.isAutoSwitchRunning());
-        mSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        Switch aSwitch = new Switch(this);
+        aSwitch.setText(getString(R.string.auto_switch));
+        aSwitch.setTextColor(0);
+        menu.findItem(R.id.menu_switch).setActionView(aSwitch);
+        aSwitch.setChecked(mBinder.isAutoSwitchRunning());
+        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {

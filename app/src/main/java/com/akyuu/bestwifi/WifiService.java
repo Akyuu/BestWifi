@@ -18,7 +18,6 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.os.SystemClock;
 import android.support.v4.app.NotificationCompat;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.raizlabs.android.dbflow.sql.language.SQLite;
@@ -59,7 +58,6 @@ public class WifiService extends Service {
     }
 
     class WifiBinder extends Binder {
-        static final String TAG = "Akyuu";
         boolean isAutoSwitchRunning() {
             return mIsRunning;
         }
@@ -129,7 +127,6 @@ public class WifiService extends Service {
     }
 
     private class ScanReceiver extends BroadcastReceiver {
-        //TODO
         @Override
         public void onReceive(Context context, Intent intent) {
             updateResults();
@@ -190,7 +187,6 @@ public class WifiService extends Service {
                                         Toast.LENGTH_SHORT);
                             }
                         }
-                        wifiInfo = null;
                     }
                 }
             }
